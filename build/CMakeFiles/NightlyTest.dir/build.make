@@ -42,10 +42,10 @@ RM = "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\SideProjects
+CMAKE_SOURCE_DIR = C:\SideProjects\calculus_engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\SideProjects\build
+CMAKE_BINARY_DIR = C:\SideProjects\calculus_engine\build
 
 # Utility rule file for NightlyTest.
 
@@ -70,6 +70,6 @@ CMakeFiles/NightlyTest.dir/clean:
 .PHONY : CMakeFiles/NightlyTest.dir/clean
 
 CMakeFiles/NightlyTest.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\SideProjects C:\SideProjects C:\SideProjects\build C:\SideProjects\build C:\SideProjects\build\CMakeFiles\NightlyTest.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\SideProjects\calculus_engine C:\SideProjects\calculus_engine C:\SideProjects\calculus_engine\build C:\SideProjects\calculus_engine\build C:\SideProjects\calculus_engine\build\CMakeFiles\NightlyTest.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NightlyTest.dir/depend
 

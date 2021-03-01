@@ -290,7 +290,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "calc_calc::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-calc_calc-Debug-e261677b4a93189f51db.json",
+					"jsonFile" : "target-calc_calc-Debug-7a5503f183331d69794a.json",
 					"name" : "calc_calc",
 					"projectIndex" : 0
 				}
@@ -300,8 +300,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/SideProjects/build",
-		"source" : "C:/SideProjects"
+		"build" : "C:/SideProjects/calculus_engine/build",
+		"source" : "C:/SideProjects/calculus_engine"
 	},
 	"version" : 
 	{

@@ -83,7 +83,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/SideProjects/build"
+			"value" : "c:/SideProjects/calculus_engine/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -651,7 +651,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/SideProjects"
+			"value" : "C:/SideProjects/calculus_engine"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -2099,7 +2099,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/SideProjects/build"
+			"value" : "C:/SideProjects/calculus_engine/build"
 		},
 		{
 			"name" : "calc_calc_SOURCE_DIR",
@@ -2111,7 +2111,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/SideProjects"
+			"value" : "C:/SideProjects/calculus_engine"
 		}
 	],
 	"kind" : "cache",

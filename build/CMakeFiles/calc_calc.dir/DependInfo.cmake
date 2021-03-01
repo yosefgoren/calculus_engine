@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/SideProjects/main.cpp" "C:/SideProjects/build/CMakeFiles/calc_calc.dir/main.cpp.obj"
+  "C:/SideProjects/calculus_engine/Fun.cpp" "C:/SideProjects/calculus_engine/build/CMakeFiles/calc_calc.dir/Fun.cpp.obj"
+  "C:/SideProjects/calculus_engine/main.cpp" "C:/SideProjects/calculus_engine/build/CMakeFiles/calc_calc.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

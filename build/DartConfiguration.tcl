@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/SideProjects
-BuildDirectory: C:/SideProjects/build
+SourceDirectory: C:/SideProjects/calculus_engine
+BuildDirectory: C:/SideProjects/calculus_engine/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" "C:/SideProjects"
+ConfigureCommand: "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" "C:/SideProjects/calculus_engine"
 MakeCommand: C:/Program\ Files\ (x86)/Microsoft\ Visual\ Studio/2019/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
@@ -57,9 +57,9 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: 
+UpdateCommand: C:/Program Files/Git/cmd/git.exe
 UpdateOptions: 
-UpdateType: 
+UpdateType: git
 
 # Compiler info
 Compiler: C:/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/g++.exe

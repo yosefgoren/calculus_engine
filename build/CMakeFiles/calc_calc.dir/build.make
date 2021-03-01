@@ -42,10 +42,10 @@ RM = "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\SideProjects
+CMAKE_SOURCE_DIR = C:\SideProjects\calculus_engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\SideProjects\build
+CMAKE_BINARY_DIR = C:\SideProjects\calculus_engine\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/calc_calc.dir/depend.make
@@ -58,30 +58,45 @@ include CMakeFiles/calc_calc.dir/flags.make
 
 CMakeFiles/calc_calc.dir/main.cpp.obj: CMakeFiles/calc_calc.dir/flags.make
 CMakeFiles/calc_calc.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\SideProjects\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/calc_calc.dir/main.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\calc_calc.dir\main.cpp.obj -c C:\SideProjects\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\SideProjects\calculus_engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/calc_calc.dir/main.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\calc_calc.dir\main.cpp.obj -c C:\SideProjects\calculus_engine\main.cpp
 
 CMakeFiles/calc_calc.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/calc_calc.dir/main.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\SideProjects\main.cpp > CMakeFiles\calc_calc.dir\main.cpp.i
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\SideProjects\calculus_engine\main.cpp > CMakeFiles\calc_calc.dir\main.cpp.i
 
 CMakeFiles/calc_calc.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calc_calc.dir/main.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\SideProjects\main.cpp -o CMakeFiles\calc_calc.dir\main.cpp.s
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\SideProjects\calculus_engine\main.cpp -o CMakeFiles\calc_calc.dir\main.cpp.s
+
+CMakeFiles/calc_calc.dir/Fun.cpp.obj: CMakeFiles/calc_calc.dir/flags.make
+CMakeFiles/calc_calc.dir/Fun.cpp.obj: ../Fun.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\SideProjects\calculus_engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/calc_calc.dir/Fun.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\calc_calc.dir\Fun.cpp.obj -c C:\SideProjects\calculus_engine\Fun.cpp
+
+CMakeFiles/calc_calc.dir/Fun.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/calc_calc.dir/Fun.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\SideProjects\calculus_engine\Fun.cpp > CMakeFiles\calc_calc.dir\Fun.cpp.i
+
+CMakeFiles/calc_calc.dir/Fun.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calc_calc.dir/Fun.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\SideProjects\calculus_engine\Fun.cpp -o CMakeFiles\calc_calc.dir\Fun.cpp.s
 
 # Object files for target calc_calc
 calc_calc_OBJECTS = \
-"CMakeFiles/calc_calc.dir/main.cpp.obj"
+"CMakeFiles/calc_calc.dir/main.cpp.obj" \
+"CMakeFiles/calc_calc.dir/Fun.cpp.obj"
 
 # External object files for target calc_calc
 calc_calc_EXTERNAL_OBJECTS =
 
 calc_calc.exe: CMakeFiles/calc_calc.dir/main.cpp.obj
+calc_calc.exe: CMakeFiles/calc_calc.dir/Fun.cpp.obj
 calc_calc.exe: CMakeFiles/calc_calc.dir/build.make
 calc_calc.exe: CMakeFiles/calc_calc.dir/linklibs.rsp
 calc_calc.exe: CMakeFiles/calc_calc.dir/objects1.rsp
 calc_calc.exe: CMakeFiles/calc_calc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\SideProjects\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable calc_calc.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\SideProjects\calculus_engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable calc_calc.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\calc_calc.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -94,6 +109,6 @@ CMakeFiles/calc_calc.dir/clean:
 .PHONY : CMakeFiles/calc_calc.dir/clean
 
 CMakeFiles/calc_calc.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\SideProjects C:\SideProjects C:\SideProjects\build C:\SideProjects\build C:\SideProjects\build\CMakeFiles\calc_calc.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\SideProjects\calculus_engine C:\SideProjects\calculus_engine C:\SideProjects\calculus_engine\build C:\SideProjects\calculus_engine\build C:\SideProjects\calculus_engine\build\CMakeFiles\calc_calc.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/calc_calc.dir/depend
 

@@ -6,7 +6,31 @@
 
 #IncludeRegexTransform: 
 
-C:/SideProjects/main.cpp
+C:/SideProjects/calculus_engine/Fun.cpp
+Fun.h
+C:/SideProjects/calculus_engine/Fun.h
+memory
+C:/SideProjects/calculus_engine/memory
+
+C:/SideProjects/calculus_engine/Fun.h
+list
+C:/SideProjects/calculus_engine/list
+memory
+C:/SideProjects/calculus_engine/memory
+string
+C:/SideProjects/calculus_engine/string
+Num.h
+C:/SideProjects/calculus_engine/Num.h
+
+C:/SideProjects/calculus_engine/Num.h
+string
+C:/SideProjects/calculus_engine/string
+stdlib.h
+C:/SideProjects/calculus_engine/stdlib.h
+
+C:/SideProjects/calculus_engine/main.cpp
 iostream
 -
+Fun.h
+C:/SideProjects/calculus_engine/Fun.h
 

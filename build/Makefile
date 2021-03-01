@@ -47,10 +47,10 @@ RM = "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\SideProjects
+CMAKE_SOURCE_DIR = C:\SideProjects\calculus_engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\SideProjects\build
+CMAKE_BINARY_DIR = C:\SideProjects\calculus_engine\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = C:\SideProjects\build
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/SideProjects/build/CPackSourceConfig.cmake
+	"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/SideProjects/calculus_engine/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -112,9 +112,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\SideProjects\build\CMakeFiles C:\SideProjects\build\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\SideProjects\calculus_engine\build\CMakeFiles C:\SideProjects\calculus_engine\build\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\SideProjects\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\SideProjects\calculus_engine\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -519,6 +519,33 @@ ContinuousMemCheck/fast:
 	$(MAKE) -f CMakeFiles\ContinuousMemCheck.dir\build.make CMakeFiles/ContinuousMemCheck.dir/build
 .PHONY : ContinuousMemCheck/fast
 
+Fun.obj: Fun.cpp.obj
+
+.PHONY : Fun.obj
+
+# target to build an object file
+Fun.cpp.obj:
+	$(MAKE) -f CMakeFiles\calc_calc.dir\build.make CMakeFiles/calc_calc.dir/Fun.cpp.obj
+.PHONY : Fun.cpp.obj
+
+Fun.i: Fun.cpp.i
+
+.PHONY : Fun.i
+
+# target to preprocess a source file
+Fun.cpp.i:
+	$(MAKE) -f CMakeFiles\calc_calc.dir\build.make CMakeFiles/calc_calc.dir/Fun.cpp.i
+.PHONY : Fun.cpp.i
+
+Fun.s: Fun.cpp.s
+
+.PHONY : Fun.s
+
+# target to generate assembly for a file
+Fun.cpp.s:
+	$(MAKE) -f CMakeFiles\calc_calc.dir\build.make CMakeFiles/calc_calc.dir/Fun.cpp.s
+.PHONY : Fun.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -586,6 +613,9 @@ help:
 	@echo ... test
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Fun.obj
+	@echo ... Fun.i
+	@echo ... Fun.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

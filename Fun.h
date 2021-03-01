@@ -1,18 +1,22 @@
 #ifndef FUN
 #define FUN
 #include "list"
-#include "Tree.h"
+#include "memory"
 #include "string"
 #include "Num.h"
 
+
 using std::string;
 typedef const string& csr;
+class Fun;
+typedef std::unique_ptr<Fun> pFun;
 
 class Fun
 {
 public:
-    string expression();
-    Fun derive(csr dv="");
+    virtual string expression() = 0;
+    virtual pFun derive(csr dv="") = 0;
+    //virtual pFun& operator()(pFun f) = 0;
 };
 
 class Identity : public Fun
@@ -20,7 +24,7 @@ class Identity : public Fun
 public:
     Identity(csr var_name="x");
     string expression();
-    Fun derive(csr dv="");
+    pFun derive(csr dv="");
 private:
     string var_name;
 };
@@ -30,52 +34,44 @@ class Constant : public Fun
 public:
     Constant(Num num);
     string expression();
-    Fun derive(csr dv="");
+    pFun derive(csr dv="");
 private:
     Num num;
 };
 
-//make these virtual classes?
-// class SingleComposition
+class DoubleComposition : public Fun
+{
+public:
+    DoubleComposition(pFun f1, pFun f2);
+    pFun derive(csr dv="");
+protected:
+    pFun f1;
+    pFun f2;
+    string p_expression(csr marking);
+};
+
+class Add : public DoubleComposition
+{
+public:
+    using DoubleComposition::DoubleComposition;
+    string expression();
+    pFun derive(csr dv="");
+};
+
+class Mult : public DoubleComposition
+{
+public:
+    using DoubleComposition::DoubleComposition;
+    string expression();
+    pFun derive(csr dv="");
+};
+
+// class Power : public DoubleComposition
 // {
+// public:
+//     using DoubleComposition::DoubleComposition;
+//     string expression();
+//     Mult derive(csr dv="");
 // };
-
-// class DoubleComposition
-// {
-// };
-
-class Add : public Fun
-{
-public:
-    Add(const Fun& f1, const Fun& f2);
-    string expression();
-    Fun derive(csr dv="");
-private:
-    Fun f1;
-    Fun f2;
-};
-
-class Mult : public Fun
-{
-public:
-    Mult(const Fun& f1, const Fun& f2);
-    string expression();
-    Fun derive(csr dv="");
-private:
-    Fun f1;
-    Fun f2;  
-};
-
-class Power : public Fun
-{
-public:
-    Power(const Fun& f1, const Fun& f2);
-    string expression();
-    Fun derive(csr dv="");
-
-private:
-    Fun f1;
-    Fun f2;
-};
 
 #endif
